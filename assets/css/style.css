@@ -1,0 +1,45 @@
+/* Tüm elementlerin varsayılan boşluklarını sıfırlıyoruz */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* Tüm elementlerin fontunu miras almasını sağlıyoruz */
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+    }
+}
+
+/* Listelerdeki noktaları kaldırıyoruz */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Linkerdeki alt çizgileri kaldırıyoruz */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Resimlerin taşmasını önlüyoruz ve alt boşluğu kaldırıyoruz */
+img {
+    max-width: 100%;
+    /* resimler taşmasın */
+    display: block;
+    /* img alt boşluğu kaldırır */
+}
+
+/* Renk değişkenleri tanımlıyoruz */
+:root {
+    --mavi-renk: #3A7AFE;
+    --kirmizi-renk: #FF6B6B;
+    --turuncu-renk: #F39C12;
+    --yesil-renk: #28AE60;
+    --lila-renk: #9B59B6;
+    --font-color: #2B3E50;
+
+}
