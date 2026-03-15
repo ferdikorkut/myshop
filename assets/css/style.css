@@ -33,13 +33,75 @@ img {
     /* img alt boşluğu kaldırır */
 }
 
-/* Renk değişkenleri tanımlıyoruz */
+/* değişkenleri tanımlıyoruz */
 :root {
     --mavi-renk: #3A7AFE;
     --kirmizi-renk: #FF6B6B;
     --turuncu-renk: #F39C12;
     --yesil-renk: #28AE60;
     --lila-renk: #9B59B6;
-    --font-color: #2B3E50;
+    --font-koyu: #333333;
+    --font-acik: #666666;
+    --golge-renk: 0 8px 20px rgba(0, 0, 0, 0.1);
+    --golge-renk-hover: 0 15px 30px rgba(0, 0, 0, 0.15);
+    --arka-plan: #f8f9fa;
 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--font-koyu);
+    background-color: var(--arka-plan);
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: var(--golge-renk);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--font-koyu);
+
+}
+
+.logo span {
+    color: var(--mavi-renk);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--font-koyu);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--mavi-renk);
+}
+
+.kullanici-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
