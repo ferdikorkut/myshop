@@ -45,6 +45,7 @@ img {
     --golge-renk: 0 8px 20px rgba(0, 0, 0, 0.1);
     --golge-renk-hover: 0 15px 30px rgba(0, 0, 0, 0.20);
     --arka-plan: #f8f9fa;
+    --footer-arka-plan: #2C3D50;
     --urun-adi: 1.3rem;
     --urun-ozellikleri: 0.9rem;
     --urun-fiyatlari: 1.3rem;
@@ -278,3 +279,56 @@ article.product-card:nth-child(-n+2) .urun-fiyat {
 
 .urun-etiketi.kampanya {
     background-color: var(--turuncu-renk);
+}
+
+footer {
+
+    background-color: var(--footer-arka-plan);
+    padding: 30px;
+    color: var(--arka-plan);
+
+}
+
+.sayfa-footer {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-size: var(--urun-ozellikleri);
+
+}
+
+.footer-ozellikler {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.bilgi-notu {
+
+    color: #d0d0d0;
+}
+
+h1::after {
+    content: '';
+    background-color: var(--mavi-renk);
+    display: block;
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.footer-ozellikler p::after {
+    content: '';
+    background-color: var(--mavi-renk);
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
